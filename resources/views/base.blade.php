@@ -36,6 +36,8 @@
     </head>
 
     <body>
+
+       
         <div class="main-wrapper">
             <!-- Start Main Header -->
             <header class="main-header">
@@ -57,6 +59,8 @@
                         </div>
                     </div><!-- /.container -->
                 </div><!-- /.top-bar -->
+                {{-- Home Section --}}
+                <section id="home">
                 <div class="nav-bar nav-bar-black" id="navbar">
                     <div class="nav-container">
                         <div class="container">
@@ -77,13 +81,12 @@
                                     </a>
                                     <div class="nav-box">
                                         <div class="main-nav">
-                                            <ul>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="classes.html">Classes</a></li>
-                                                <li><a href="trainers.html">Trainers</a></li>
-                                                <li><a href="news.html">News</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                                <li><a href="shop.html">Login</a></li>
+                                            <ul id="myNavbar">
+                                                <li><a href="#prices">Planes y precios</a></li>
+                                                <li><a href="#about">¿Quién soy?</a></li>
+                                                <li><a href="#testimonials">Testimonios</a></li>
+                                                <li><a href="#contact">Contáctame</a></li>
+                                                <li><a href="#login">Login</a></li>
                                             </ul>
                                         </div><!-- /.main-nav -->
                                         <div class="small-cart-link">
@@ -116,6 +119,7 @@
                     </div><!-- /.search-box -->
                 </div><!-- /.nav-bar -->
             </header><!-- /.main-header -->
+        </section>
             <!-- End Main Header -->
 
             <!-- Start Main Content Part -->
@@ -223,6 +227,7 @@
                     </div><!-- /.prices -->
                 </div><!-- /.wrapper -->
             </div>
+
             <div class="text-section">
                 <div class="container">
                     <div class="row">
@@ -249,6 +254,9 @@
                     </div>
                 </div>
             </div>
+
+            {{-- About Section --}}
+            <section id="about">
             <div class="banner main-banner-1 hidden-sm hidden-xs">
                 <div class="container">
                     <div class="banner-1-img animated-on-scroll"  data-animation="fadeInUp" data-delay="0s">
@@ -270,58 +278,40 @@
                     </div>
                 </div>
             </div>
+            </section>
+
+   
             <div class="our-team">
                 <div class="our-team-bg">
                     <div class="our-team-bg-img data-bg" data-background="img/team/ourteam-bg.jpg"></div>
                 </div>
                 <div class="container our-team__content">
-                    <h2 class="section-title">NUESTRO EQUIPO</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="our-team__item">
-                                <div class="our-team__image">
-                                    <img src="img/team/our_team-img_11.jpg" alt="Team">
-                                    <div class="our-team__hover hover-zoomIn">
-                                        <ul>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4>Julian Castro</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="our-team__item">
-                                <div class="our-team__image">
-                                    <img src="img/team/our_team-img_21.jpg" alt="Arjuna Vasquez">
-                                    <div class="our-team__hover hover-zoomIn">
-                                        <ul>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4>Arjuna Vasquez</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="our-team__item">
-                                <div class="our-team__image">
-                                    <img src="img/team/our_team-img_41.jpg" alt="Team 3">
-                                    <div class="our-team__hover hover-zoomIn">
-                                        <ul>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#" class="hover-zoomIn"><i class="fab fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4>Johan Patiño</h4>
-                            </div>
-                        </div>
+                    <div class="our-team__item">
+                        <p>
+                                ​Hola soy  Arju y mi misión es mostrar el fitness como un estilo de vida, demostrándole a la gente que se puede tener el cuerpo que siempre quisieron, 
+                                ser saludable y poder disfrutar del proceso!
+
+                                El fitness te va ayudar no solamente a lucir bien y ser físicamente mas fuerte, 
+                                sino que te enseñará a ser una persona disciplinada, enfocada en tus metas y con mas autoestima!
+                                
+                                Yo ofrezco programas reales con resultados reales de acuerdo a las necesidades de mis clientes, 
+                                el proceso no es duro, pero requiere de voluntad, disciplina y constancia, mucha constancia, por eso voy a serles sincero, 
+                                si no están dispuestos a meterle la voluntad y las ganas que deberían, quédense tal como están y abandonen el sueño de tener el cuerpo que desean.
+                                
+                                Yo no nací teniendo este cuerpo o siendo un deportista nato, incluso sufrí lo que se denomina pubertad tardía, 
+                                lo cual estancó mi crecimiento durante mucho tiempo, casi todo mi época de colegio era conocido como el “pequeñito de la clase” 
+                                incluso las niñas eran mas altas y grandes que yo, esto hacia que no me sintiera bien conmigo mismo, refugiándome así en los juegos virtuales, 
+                                hasta tal punto que solo me la pasaba jugando en el computador y no hacia nada mas, nunca me importo lo que comía, 
+                                me la pasaba comiendo cualquier cosa que se me atravesara, mi físico a los 17 años era una mezcla de flaco y gordo lo que se denomina como “skinny-fat”.
+                        </p>
+                        <p>
+                                Mi físico actual a mis 22 años es prueba de que se puede ser naturales y obtener un cuerpo “ chévere” de playa  y no sacrificar los 
+                                otros aspectos de la vida como el trabajo, el estudio, las comidas, la rumba, haciendo lo que  se denomina  “disfrutar el proceso.”
+                                Así que ya saben, déjenme guiarlos por este mundo del fitness, yo garantizo que una persona puede ver resultados si pone el trabajo, 
+                                la constancia y la disciplina necesaria, y puedan volverse mejores físicamente y emocionalmente. Así como pasó conmigo, 
+                                ¡el fitness ha sido un factor clave en mi vida!
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -346,6 +336,8 @@
                 </div>
             </div>
            
+            {{-- Testiomials section --}}
+            <section id="testimonials">
             <div class="main-news-list">
                 <div class="container">
                     <h2 class="section-title">Testimonios</h2>
@@ -407,6 +399,7 @@
                         
                     </div>
                 </div>
+            </section>
             </div>
             <div class="counters-section hidden-xs">
                 <div class="counters-line"></div>
@@ -462,5 +455,6 @@
         <script src="/js/slick.min.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/app.js"></script>
+        <script src="/js/scroll.js"></script>
     </body>
 </html>

@@ -2463,6 +2463,9 @@ padding-top: 72px;
 .our-team .our-team__item {
   position: relative; }
 
+.our-team .our-team__item p {
+  font-weight: 500;
+  font-size: 19px}
 .our-team .our-team__hover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2534,6 +2537,7 @@ padding-top: 72px;
   margin-top: 400px; }
 
 .our-team .our-team-bg {
+  opacity: 0.6;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2707,7 +2711,7 @@ padding-top: 72px;
   margin-top: 30px; }
 
 .banner-trainer.negative-margin-top {
-  margin-top: -200px; }
+  margin-top: -225px; }
 
 /* ------- Video box on home page ------- */
 .video-box {
