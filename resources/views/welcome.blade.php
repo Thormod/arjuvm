@@ -162,30 +162,87 @@
         <div class="container mobile-container-fluid">
             <div class="discount-box">
                 <div class="discount-percent clr-colorify">35%</div>
-                <div class="discount-title">DISCOUNT</div>
-                <a href="#" class="button button-border clr-white button-decor-triangle btn-lg">PAY NOW</a>
+                <div class="discount-title">DE DESCUENTO!</div>
+                <a href="#" class="button button-border clr-white button-decor-triangle btn-lg">Planes</a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
-                    <h3 class="clr-white">BEGINNER</h3>
-                    <div class="prices-box-price clr-white">$65</div>
-                    <span>Monthly</span>
-                    <p class="clr-white lh-200">Lorem ipsum dolor sit amet, quod duis mea no. Graece debitis lobortis mea ut, et detracto indoctum principes mea.</p>
-                    <a href="#" class="link-readmore clr-white">Read more</a>
+                    <h3 class="clr-white">BÁSICO</h3>
+                    <div class="prices-box-price clr-white">$30</div>
+                    <span>Mensual</span>
+                    <p class="clr-white lh-200">
+                        - Plan de alimentacion.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Contar macros. 
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Programa de entrenamiento.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Lista de Mercado.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Macros.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Acceso a material online.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Acompañamiento 1 a 1 online 24/7.
+                    </p>
                 </div>
                 <div class="prices-box">
-                    <h3 class="clr-white">Advanced</h3>
-                    <div class="prices-box-price clr-white">$90</div>
-                    <span>Monthly</span>
-                    <p class="clr-white lh-200">Lorem ipsum dolLorem ipsum dolorLorem ipsum doloror sit amet. Graece et detracto indoctum principes mea.</p>
-                    <a href="#" class="link-readmore clr-white">Read more</a>
+                    <h3 class="clr-white">AVANZADO</h3>
+                    <div class="prices-box-price clr-white">$100</div>
+                    <span>3 MESES</span>
+                    <p class="clr-white lh-200">
+                        - Plan de alimentacion.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Contar macros. 
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Programa de entrenamiento.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Lista de Mercado.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Macros.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Acceso a material online.
+                    </p>
+                    <p class="clr-white lh-200"> 
+                        - Acompañamiento 1 a 1 online 24/7.
+                    </p>
                 </div>
                 <div class="prices-box">
-                    <h3 class="clr-white">Warior</h3>
-                    <div class="prices-box-price clr-white">$145</div>
-                    <span>Monthly</span>
-                    <p class="clr-white lh-200">Lorem ipsum dolor sit amet, quod duis mea no. Graece debitis lobortis mea ut, et detracto indoctum principes mea.</p>
-                    <a href="#" class="link-readmore clr-white">Read more</a>
+                    <h3 class="clr-white">GUERRERO</h3>
+                    <div class="prices-box-price clr-white">$165</div>
+                    <span>6 MESES</span>
+                    <p class="clr-white lh-200">
+                            - Plan de alimentacion.
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Contar macros. 
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Programa de entrenamiento.
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Acceso a material online.
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Lista de Mercado.
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Macros.
+                        </p>
+                        <p class="clr-white lh-200"> 
+                            - Acompañamiento 1 a 1 online 24/7.
+                        </p>
                 </div>
             </div><!-- /.prices -->
         </div><!-- /.wrapper -->
