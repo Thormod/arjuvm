@@ -287,6 +287,7 @@
                 </div>
                 <div class="container our-team__content">
                     <div class="our-team__item">
+                        <p class="name">ARJU<span>VM</span></p>
                         <p>
                                 ​Hola soy  Arju y mi misión es mostrar el fitness como un estilo de vida, demostrándole a la gente que se puede tener el cuerpo que siempre quisieron, 
                                 ser saludable y poder disfrutar del proceso!
@@ -405,40 +406,22 @@
                 <div class="counters-line"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-4">
                             <div class="counter-item">
-                                <span class="counter" data-from="2200" data-to="2486" data-speed="6000" data-refresh-interval="50">2486</span>
-                                <span class="counter-title">happy <br>clients</span>
+                                <span class="counter" data-from="100" data-to="150" data-speed="6000" data-refresh-interval="50">100</span>
+                                <span class="counter-title">Clientes <br> Satisfechos</span>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-4">
                             <div class="counter-item">
-                                <span class="counter" data-from="300" data-to="1064" data-speed="6000" data-refresh-interval="50">1064</span>
-                                <span class="counter-title">sport <br>lessons</span>
+                                <span class="counter" data-from="10" data-to="24" data-speed="6000" data-refresh-interval="50">10</span>
+                                <span class="counter-title">Horas <br> de disponibilidad</span>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-4">
                             <div class="counter-item">
-                                <span class="counter" data-from="10" data-to="170" data-speed="3000" data-refresh-interval="50">170</span>
-                                <span class="counter-title">fitness <br>equipment</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="counter-item">
-                                <span class="counter" data-from="10" data-to="365" data-speed="4000" data-refresh-interval="50">365</span>
-                                <span class="counter-title">days of <br>fitness</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="counter-item">
-                                <span class="counter" data-from="0" data-to="10" data-speed="500" data-refresh-interval="50">10</span>
-                                <span class="counter-title">years of <br>activity</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="counter-item">
-                                <span class="counter" data-from="0" data-to="15" data-speed="500" data-refresh-interval="50">15</span>
-                                <span class="counter-title">shops</span>
+                                <span class="counter" data-from="10" data-to="170" data-speed="6000" data-refresh-interval="50">10</span>
+                                <span class="counter-title">Rutinas <br>Establecidas</span>
                             </div>
                         </div>
                     </div>
