@@ -37,6 +37,9 @@
 
     <body>
         @yield('content')
+        <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button">
+            <i class="fas fa-angle-up"></i>
+        </a>
         @include('layouts.footer')
         <!-- Include JS -->
         <script src="/js/vendor/jquery-3.2.0.min.js"></script>

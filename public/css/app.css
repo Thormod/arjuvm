@@ -44,6 +44,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.back-to-top {
+  background-color: #cb1313;
+  border-color: #cb1313;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  display:none;
+  color: #fff}
+
+.back-to-top:hover, .back-to-top:active {
+  background-color: #670f0f;
+  border-color: #670f0f;
+  color: #fff;}
+
 /* ------------------------------------------------------ */
 /* ------------- True Lies Font ------------------------- */
 /* ------------------------------------------------------ */
