@@ -963,6 +963,16 @@ input.border-white::placeholder {
   position: relative;
   overflow: hidden; }
 
+.main-footer .site-title {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: 'TrueLies', 'Open Sans';
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 100%;}
+
+.main-footer .site-title span {
+  color: #cb1313cf; }
+
 .main-footer p {
   font-size: 13px;
   font-weight: 300;
@@ -2549,7 +2559,7 @@ padding-top: 72px;
   margin-top: 400px; }
 
 .our-team .our-team-bg {
-  opacity: 0.6;
+  opacity: 0.45;
   position: absolute;
   height: 100%;
   width: 100%;
