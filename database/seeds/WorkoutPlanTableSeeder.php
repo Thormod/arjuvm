@@ -11,6 +11,6 @@ class WorkoutPlanTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\WorkoutPlan::class, 20)->create();
     }
 }

@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class WorkoutPlan extends Model
+class Orders extends Model
 {
     // Table name
-    protected $table = 'workout_plan';
+    protected $table = 'orders';
 }

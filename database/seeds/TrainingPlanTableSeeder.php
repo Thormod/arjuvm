@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class WorkoutTableSeeder extends Seeder
+class TrainingPlanTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class WorkoutTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Workout::class, 20)->create();
+        factory(App\TrainingPlan::class, 20)->create();        
     }
 }
