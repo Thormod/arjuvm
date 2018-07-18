@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-7 col-xs-7">
                             <div class="logo">
-                                <a href="#home" class="site-title"><span>ARJU</span>VM</a>
+                                <a href="{{ url('/') }}" class="site-title"><span>ARJU</span>VM</a>
                             </div>
                         </div>
                         <div class="col-md-10 col-sm-5 col-xs-5 nav-mobile">
@@ -45,19 +45,34 @@
                             <div class="nav-box">
                                 <div class="main-nav">
                                     <ul id="myNavbar">
-                                        <li><a href="#prices">Planes y precios</a></li>
+                                        <li><a href="{{ url('/trainingPlans') }}">Planes y precios</a></li>
                                         <li><a href="#about">¿Quién soy?</a></li>
                                         <li><a href="#testimonials">Testimonios</a></li>
                                         <li><a href="#contact">Contáctame</a></li>
-                                        <li><a href="#login">Login</a></li>
+                                        @guest
+                                            <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
+                                        @else
+                                            <li><a href="#">{{ Auth::user()->email }}</a></li>
+                                                <li>
+                                                    <a  href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();
+                                                                    document.getElementById('logout-form').submit();">
+                                                    {{ __('Cerrar Sesión') }}
+
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                                </li>
+                                            </li>
+                                        @endguest
                                     </ul>
                                 </div><!-- /.main-nav -->
-                                <div class="small-cart-link">
+                                {{-- <div class="small-cart-link">
                                     <a href="#">
                                         <i class="fas fa-shopping-basket"></i>
                                         <span class="small-cart-counter">2</span>
                                     </a>
-                                </div><!-- /.small-cart-link -->
+                                </div><!-- /.small-cart-link --> --}}
                                 <div class="small-search">
                                     <a href="#" class="search-open"><i class="fa fa-search"></i></a>
                                 </div><!-- /.small-search -->
