@@ -73,15 +73,15 @@
                                         <span class="small-cart-counter">2</span>
                                     </a>
                                 </div><!-- /.small-cart-link --> --}}
-                                <div class="small-search">
+                                {{-- <div class="small-search">
                                     <a href="#" class="search-open"><i class="fa fa-search"></i></a>
-                                </div><!-- /.small-search -->
+                                </div><!-- /.small-search --> --}}
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!-- /.nav-bar-container -->
-            <div class="search-box">
+            {{-- <div class="search-box">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- /.search-box -->
+            </div><!-- /.search-box --> --}}
         </div><!-- /.nav-bar -->
     </header><!-- /.main-header -->
 </section>

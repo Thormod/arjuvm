@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div><!-- /.nav-bar-container -->
-        <div class="search-box">
+        {{-- <div class="search-box">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-        </div><!-- /.search-box -->
+        </div><!-- /.search-box --> --}}
     </div><!-- /.nav-bar -->
 </header><!-- /.main-header -->
 <!-- End Main Header -->
