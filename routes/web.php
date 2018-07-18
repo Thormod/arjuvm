@@ -21,4 +21,5 @@ Route::get('/trainingPlans', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/profile', 'HomeController@index')->name('home');
+Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan');
+Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');

@@ -6,18 +6,32 @@
                 <div class="col-md-8 col-sm-12 col-xs-12 col-sm-12 hidden-xs">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#home">Inicio</a></li>                            
-                            <li><a href="#prices">Planes y precios</a></li>
-                            <li><a href="#about">¿Quién soy?</a></li>
-                            <li><a href="#testimonials">Testimonios</a></li>
+                            <li><a href="{{ url('/trainingPlan') }}">Planes y precios</a></li>
+                            <li><a href="{{ url('/#about') }}">¿Quién soy?</a></li>
+                            <li><a href="{{ url('/#testimonials') }}">Testimonios</a></li>
                             <li><a href="#contact">Contáctame</a></li>
-                            <li><a href="#login">Login</a></li>
+                            @guest
+                                <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
+                            @else
+                                <li><a href="#">{{ Auth::user()->email }}</a></li>
+                                <li>
+                                    <a  href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                    {{ __('Cerrar Sesión') }}
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </li>
+                            </li>
+                            @endguest
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-3 col-xs-12 hidden-sm">
                     <div class="footer-logo">
-                        <a href=""  class="site-title">ARJU<span>VM</span></a>
+                        <a href="{{ url('/') }}"  class="site-title">ARJU<span>VM</span></a>
                     </div>
                 </div>
             </div>

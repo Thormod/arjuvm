@@ -13,13 +13,16 @@ class CreateTrainingPlanTable extends Migration
      */
     public function up()
     {
+        Schema::defaultStringLength(3000);
         Schema::create('training_plan', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->float('price');
+            $table->float('discount');
             $table->string('image_url');
             $table->string('video_url')->nullable();
             $table->string('description');
+            $table->string('short_description');
             $table->timestamps();
         });
     }
