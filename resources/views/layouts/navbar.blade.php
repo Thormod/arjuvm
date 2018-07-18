@@ -22,9 +22,9 @@
                         <div class="nav-box">
                             <div class="main-nav">
                                 <ul>
-                                    <li><a href="#prices">Planes y precios</a></li>
-                                    <li><a href="#about">¿Quién soy?</a></li>
-                                    <li><a href="#testimonials">Testimonios</a></li>
+                                    <li><a href="{{ url('/trainingPlans') }}">Planes y precios</a></li>
+                                    <li><a href="{{ url('/#about') }}">¿Quién soy?</a></li>
+                                    <li><a href="{{ url('/#testimonials') }}">Testimonios</a></li>
                                     <li><a href="#contact">Contáctame</a></li>
                                     @guest
                                         <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
