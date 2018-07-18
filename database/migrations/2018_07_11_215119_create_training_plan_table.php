@@ -16,8 +16,9 @@ class CreateTrainingPlanTable extends Migration
         Schema::create('training_plan', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->float('price');
             $table->string('image_url');
-            $table->string('video_url');
+            $table->string('video_url')->nullable();
             $table->string('description');
             $table->timestamps();
         });

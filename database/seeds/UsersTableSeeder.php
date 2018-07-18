@@ -14,6 +14,7 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' =>  $faker->name,
+            'phone' => $faker->e164PhoneNumber,            
             'email' => 'thor@gmail.com',
             'nutritional_plan_id' => NutritionalPlan::all()->random()->id,
             'password' => bcrypt('secret'),
