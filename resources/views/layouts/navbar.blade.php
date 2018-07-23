@@ -1,4 +1,3 @@
-<div class="main-wrapper">
 <!-- Start Main Header -->
 <header class="main-header">
     <div class="nav-bar">
@@ -24,20 +23,16 @@
                                 <ul>
                                     <li><a href="{{ url('/trainingPlan') }}">Planes y precios</a></li>
                                     @guest
-                                        <li><a href="{{ url('/#about') }}">¿Quién soy?</a></li>
-                                        <li><a href="{{ url('/#testimonials') }}">Testimonios</a></li>
                                         <li><a href="#contact">Contáctame</a></li>
                                         <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                                     @else
                                         <li><a href="#">Mi Perfil</a></li>
                                         <li>
-                                            <a  href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                            document.getElementById('logout-form').submit();">
-                                            {{ __('Cerrar Sesión') }}
-
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                @csrf
+                                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                                                Cerrar Sesión
+                                            </a>    
+                                            <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
                                             </form>
                                         </li>
                                     </li>

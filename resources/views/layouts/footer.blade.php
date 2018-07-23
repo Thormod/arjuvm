@@ -13,7 +13,7 @@
                             @guest
                                 <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                             @else
-                                <li><a href="#">{{ Auth::user()->email }}</a></li>
+                                <li><a href="#">Mi perfil</a></li>
                                 <li>
                                     <a  href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
