@@ -26,6 +26,7 @@
                                         <li><a href="#contact">Contáctame</a></li>
                                         <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                                     @else
+                                        <li><a href="{{ url('/exchangeList') }}">Tabla de nutrientes</a></li>
                                         <li><a href="#">Mi Perfil</a></li>
                                         <li>
                                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">

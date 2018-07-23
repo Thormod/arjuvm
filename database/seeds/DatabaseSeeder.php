@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             WorkoutTableSeeder::class,
             WorkoutPlanTableSeeder::class,
             OrdersTableSeeder::class,
+            ExchangeListTableSeeder::class,
         ]);
     }
 }
