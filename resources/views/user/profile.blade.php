@@ -2,6 +2,11 @@
 @section('content')
 <div class="main-wrapper">
    @include('layouts.navbar')
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
    <!-- Start Main Content Part -->
    <div class="s-pagetitle">
       <img src="/img/backgrounds/pagetitle-img_classes.jpg" class="s-pagetitle-img" alt="About page title image">
