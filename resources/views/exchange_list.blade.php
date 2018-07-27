@@ -23,11 +23,9 @@
       </div>
    </div>
    <div class="container">
-
-
-            <div class="form-group">
-                <input type="text" class="search form-control" placeholder="Nombre de alimento">
-            </div>
+      <div class="form-group">
+        <input type="text" class="search form-control" placeholder="Nombre de alimento">
+      </div>
       <table class="table  table-hover results" id="myTable">
          <tbody>
          <thead>
