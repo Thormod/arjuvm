@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->integer('nutritional_plan_id')->unsigned();
             $table->string('password');
+            $table->string('avatar_url');
+            $table->string('gender');
+            $table->date('birthdate');
             $table->rememberToken();
             $table->timestamps();
         });

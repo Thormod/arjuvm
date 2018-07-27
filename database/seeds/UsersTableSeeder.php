@@ -16,10 +16,13 @@ class UsersTableSeeder extends Seeder
             'name' =>  $faker->name,
             'phone' => $faker->e164PhoneNumber,            
             'email' => 'thor@gmail.com',
-            'nutritional_plan_id' => NutritionalPlan::all()->random()->id,
+            'gender' => $faker->randomElement($array = array ('male', 'female')),
+            'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
+            'nutritional_plan_id' => 1,
+            'avatar_url' => $faker->imageUrl($width = 200, $height = 200),
             'password' => bcrypt('secret'),
         ]);
 
-        factory(App\User::class, 50)->create();
+        factory(App\User::class, 49)->create();
     }
 }

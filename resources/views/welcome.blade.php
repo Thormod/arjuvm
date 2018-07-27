@@ -52,17 +52,16 @@
                                         @guest
                                             <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                                         @else
-                                            <li><a href="#">Mi Perfil</a></li>
-                                                <li>
-                                                    <a  href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault();
-                                                                    document.getElementById('logout-form').submit();">
-                                                    {{ __('Cerrar Sesión') }}
+                                            <li><a href="/profile/{{ Auth::id() }}">Mi Perfil</a></li>
+                                            <li>
+                                                <a  href="{{ route('logout') }}"
+                                                onclick="event.preventDefault();
+                                                                document.getElementById('logout-form').submit();">
+                                                {{ __('Cerrar Sesión') }}
 
-                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                        @csrf
-                                                    </form>
-                                                </li>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                    @csrf
+                                                </form>
                                             </li>
                                         @endguest
                                     </ul>

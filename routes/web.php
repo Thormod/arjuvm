@@ -21,6 +21,10 @@ Route::get('/trainingPlans', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Exchange List
+Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList')->middleware('auth');
+// Training plan
 Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan');
 Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');
-Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList');
+// User profile
+Route::get('/profile/{id}', 'UserController@profile')->name('profile')->middleware('auth');
