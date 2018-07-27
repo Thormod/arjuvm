@@ -408,6 +408,19 @@ table.table tr td {
   font-weight: 300;
   font-size: 14px;
   border: none; }
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
 
 .link-img {
   overflow: hidden;

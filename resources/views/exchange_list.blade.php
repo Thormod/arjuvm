@@ -23,7 +23,12 @@
       </div>
    </div>
    <div class="container">
-      <table class="table">
+
+
+            <div class="form-group">
+                <input type="text" class="search form-control" placeholder="Nombre de alimento">
+            </div>
+      <table class="table  table-hover results" id="myTable">
          <tbody>
          <thead>
             <tr>
@@ -33,6 +38,9 @@
                <th scope="col">Proteina</th>
                <th scope="col">Grasa</th>
                <th scope="col">Unidad</th>
+            </tr>
+            <tr class="warning no-result">
+                <td colspan="6"><i class="fa fa-warning"></i> Sin resultados</td>
             </tr>
          </thead>
          <tbody>
@@ -49,6 +57,7 @@
          </tbody>
          </tbody>
       </table>
+      <br>
    </div>
 </div>
 <!-- /.main-wrapper -->
