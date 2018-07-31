@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function nutritionalPlan()
     {
-        return $this->hasMany('App\NutritionalPlan');
+        return $this->hasMany(NutritionalPlan::class);
     }
 }

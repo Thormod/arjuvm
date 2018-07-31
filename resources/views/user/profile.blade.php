@@ -42,9 +42,8 @@
                         <!-- END SIDEBAR USERPIC -->
                         <!-- SIDEBAR USER TITLE -->
                         <div class="profile-usertitle">
-                            <div class="profile-usertitle-name">
-                                {{ $user->name }}
-                            </div>
+                            <h4> {{ $user->name }} </h4>
+                            <a href="#" class="button button-border">EDITAR PERFIL</a>
                         </div>
                         <!-- END SIDEBAR USER TITLE -->
                     </div>
@@ -85,20 +84,24 @@
    </div>
    <hr>
    <div class="row">
-   @foreach ($trainingPlans as $trainingPlan)
-        <div class="col-md-3 col-sm-6">
-                <span class="thumbnail">
-                <div class="trainer-item">
-                    <div class="trainer-img">
-                        <img src="{{ $trainingPlan->image_url }}" alt="Oliver McCormick">
+    @if(!empty($trainingPlans))
+        @foreach ($trainingPlans as $trainingPlan)
+            <div class="col-md-3 col-sm-6">
+                    <span class="thumbnail">
+                    <div class="trainer-item">
+                        <div class="trainer-img">
+                            <img src="{{ $trainingPlan->image_url }}" alt="Oliver McCormick">
+                        </div>
+                        <div class="trainer-desc">
+                            <h4>{{ $trainingPlan->name }}</h4>
+                        </div>
                     </div>
-                    <div class="trainer-desc">
-                        <h4>{{ $trainingPlan->name }}</h4>
-                    </div>
+                    </span>
                 </div>
-                </span>
-            </div>
-    @endforeach
+        @endforeach
+    @else
+        <h3 class="profile-plan-msg center">No tienes planes activos!</h3>
+    @endif
     </div>
 </div>
 <!-- /.main-wrapper -->
