@@ -28,16 +28,28 @@
       </div>
    </div>
    <div class="container">
-        {{ $user->orders }}
         <div class="trainer-page">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="trainer-page-img">
+                    {{-- <div class="trainer-page-img">
                         <img src="{{ $user->avatar_url }}" alt="{{ $user->name }}">
+                    </div> --}}
+                    <div class="profile-sidebar">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="{{ $user->avatar_url }}" class="img-thumbnail center" alt="" align="middle">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                {{ $user->name }}
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <h3>{{ $user->name }}</h3>
                     <table class="table">
                         <tr>
                             <td>EDAD:</td>
@@ -71,6 +83,23 @@
                 </div>
             </div>
    </div>
+   <hr>
+   <div class="row">
+   @foreach ($trainingPlans as $trainingPlan)
+        <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                <div class="trainer-item">
+                    <div class="trainer-img">
+                        <img src="{{ $trainingPlan->image_url }}" alt="Oliver McCormick">
+                    </div>
+                    <div class="trainer-desc">
+                        <h4>{{ $trainingPlan->name }}</h4>
+                    </div>
+                </div>
+                </span>
+            </div>
+    @endforeach
+    </div>
 </div>
 <!-- /.main-wrapper -->
 @endsection
