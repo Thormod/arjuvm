@@ -21,7 +21,7 @@
             <div class="col-lg-12">
                <ul>
                   <li><a href="{{ url('/') }}">Inicio</a></li>
-                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="/profile/{{ Auth::id() }}">Mi Perfil</a></li>
                </ul>
             </div>
          </div>
@@ -43,7 +43,7 @@
                         <!-- SIDEBAR USER TITLE -->
                         <div class="profile-usertitle">
                             <h4> {{ $user->name }} </h4>
-                            <a href="#" class="button button-border">EDITAR PERFIL</a>
+                            <a href="/edit_profile/{{ Auth::id() }}" class="button button-border">EDITAR PERFIL</a>
                         </div>
                         <!-- END SIDEBAR USER TITLE -->
                     </div>
@@ -51,8 +51,16 @@
                 <div class="col-md-9">
                     <table class="table">
                         <tr>
+                            <td>EMAIL:</td>
+                            <td>{{ $user->email }}</td>
+                        </tr>
+                        <tr>
+                            <td>PHONE:</td>
+                            <td>{{ $user->phone }}</td>
+                        </tr>
+                        <tr>
                             <td>EDAD:</td>
-                            <td>27</td>
+                            <td>{{ (date('Y') - date('Y',strtotime($user->birthdate))) }}</td>
                         </tr>
                         <tr>
                             <td>PESO ACTUAL:</td>

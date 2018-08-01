@@ -28,3 +28,5 @@ Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan'
 Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');
 // User profile
 Route::get('/profile/{id}', 'UserController@profile')->name('profile')->middleware('auth');
+// User edit-profile
+Route::get('/edit_profile/{id}', 'UserController@editProfile')->name('editProfile')->middleware('auth');

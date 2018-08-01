@@ -21,4 +21,11 @@ class UserController extends Controller
             
         return view('user.profile', compact('user', 'nutritionalPlan', 'trainingPlans'));
     }
+
+    public function editProfile($id)
+    {
+        $user = Auth::user();
+        $nutritionalPlan = NutritionalPlan::find($user->nutritional_plan_id);      
+        return view('user.edit_profile', compact('user', 'nutritionalPlan'));
+    }
 }
