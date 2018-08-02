@@ -19,7 +19,6 @@ class UsersTableSeeder extends Seeder
             'gender' => $faker->randomElement($array = array ('male', 'female')),
             'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
             'nutritional_plan_id' => 1,
-            'avatar_url' => $faker->imageUrl($width = 200, $height = 200),
             'password' => bcrypt('secret'),
         ]);
 

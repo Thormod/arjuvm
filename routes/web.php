@@ -21,12 +21,18 @@ Route::get('/trainingPlans', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-// Exchange List
-Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList')->middleware('auth');
 // Training plan
 Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan');
 Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');
-// User profile
-Route::get('/profile/{id}', 'UserController@profile')->name('profile')->middleware('auth');
-// User edit-profile
-Route::get('/edit_profile/{id}', 'UserController@editProfile')->name('editProfile')->middleware('auth');
+
+
+Route::middleware(['auth'])->group(function () {
+    // Exchange List
+    Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList');
+    // User profile
+    Route::get('/profile/{id}', 'UserController@profile')->name('profile');
+    // User edit-profile
+    Route::get('/edit_profile/{id}', 'UserController@editProfile')->name('editProfile');
+    // User update-profile
+    Route::post('/updateProfile', 'UserController@updateProfile')->name('updateProfile');
+});

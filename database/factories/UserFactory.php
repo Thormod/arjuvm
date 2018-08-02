@@ -20,7 +20,6 @@ $factory->define(App\User::class, function (Faker $faker) {
         'phone' => $faker->e164PhoneNumber,
         'gender' => $faker->randomElement($array = array ('male', 'female')),
         'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
-        'avatar_url' => $faker->imageUrl($width = 200, $height = 200),
         'nutritional_plan_id' => $faker->unique()->numberBetween($min = 2, $max = 50),
         'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
         'remember_token' => str_random(10),
