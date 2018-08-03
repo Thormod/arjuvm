@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             ExerciseTableSeeder::class,
             WorkoutTableSeeder::class,
             WorkoutPlanTableSeeder::class,
+            TrainingPlanDetailTableSeeder::class,
             OrdersTableSeeder::class,
             ExchangeListTableSeeder::class,
         ]);

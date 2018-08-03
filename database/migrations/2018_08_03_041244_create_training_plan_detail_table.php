@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWorkoutTable extends Migration
+class CreateTrainingPlanDetailTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateWorkoutTable extends Migration
      */
     public function up()
     {
-        Schema::create('workout', function (Blueprint $table) {
+        Schema::create('training_plan_detail', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('description');
+            $table->integer('workout_id')->unsigned();
+            $table->integer('training_plan_id')->unsigned();
+            $table->integer('day');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateWorkoutTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('workout');
+        Schema::dropIfExists('training_plan_detail');
     }
 }

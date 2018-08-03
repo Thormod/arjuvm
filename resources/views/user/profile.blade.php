@@ -95,17 +95,19 @@
     @if(!empty($trainingPlans))
         @foreach ($trainingPlans as $trainingPlan)
             <div class="col-md-3 col-sm-6">
-                    <span class="thumbnail">
-                    <div class="trainer-item">
-                        <div class="trainer-img">
-                            <img src="{{ $trainingPlan->image_url }}" alt="Oliver McCormick">
-                        </div>
-                        <div class="trainer-desc">
-                            <h4>{{ $trainingPlan->name }}</h4>
-                        </div>
+                <a href="/trainingPlan/dashboard/{{ $trainingPlan->id }}">
+                <span class="thumbnail">
+                <div class="trainer-item">
+                    <div class="trainer-img">
+                        <img src="{{ $trainingPlan->image_url }}" alt="Oliver McCormick">
                     </div>
-                    </span>
+                    <div class="trainer-desc">
+                        <h4>{{ $trainingPlan->name }}</h4>
+                    </div>
                 </div>
+                </span>
+                </a>
+            </div>
         @endforeach
     @else
         <h3 class="profile-plan-msg center">No tienes planes activos!</h3>

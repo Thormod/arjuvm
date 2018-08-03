@@ -59,7 +59,6 @@ table {
   background-color: #670f0f;
   border-color: #670f0f;
   color: #fff;}
-
 /* ------------------------------------------------------ */
 /* ------------- True Lies Font ------------------------- */
 /* ------------------------------------------------------ */
@@ -3000,6 +2999,46 @@ padding-top: 72px;
 
 .products-list {
   margin-top: 50px; }
+/* ============== Dashboard section =============== */
+.gray-background {
+  background-color: #fafafa;
+  padding-bottom: 60px; }
+
+.clearfix {
+  margin-top: 50px; }
+/* ============== Calendar  ============== */
+div#calendar {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+}
+table {
+  width: 100%;
+  font-family: sans-serif;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+tbody.days_cal tr td a {
+  padding: 0;
+  text-decoration: none;
+  background: #FFF;
+  color: #888;
+  height: 3.2rem;
+  width: 100%;
+  line-height: 3.2rem;
+  display: block;
+}
+tbody.days_cal tr td {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ECECEC;
+  text-align: center;
+  width: 14.28571428571429%;
+  height: auto;
+}
 
 /* ============== Subscribe section =============== */
 .subscribe-section {
@@ -3933,7 +3972,7 @@ padding-top: 72px;
 .profile-userpic img {
   float: none;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   height: 70%;
 }
 .center {

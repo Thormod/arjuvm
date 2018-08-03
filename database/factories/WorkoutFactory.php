@@ -2,10 +2,9 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Workout::class, function (Faker $faker) {
+$factory->define(App\Workout::class, function (Faker $faker) {  
     return [
         'name' => $faker->sentence(5),
         'description' => $faker->text(180),
-        'day' => $faker->unique($reset = true)->numberBetween($min = 1, $max = 20)
     ];
 });

@@ -2,6 +2,8 @@
 
 use Faker\Generator as Faker;
 
+use App\TrainingPlanDetail;
+
 $factory->define(App\TrainingPlan::class, function (Faker $faker) {
     return [
         'name' => $faker->sentence(3),

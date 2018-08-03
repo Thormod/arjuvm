@@ -29,10 +29,14 @@ Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainin
 Route::middleware(['auth'])->group(function () {
     // Exchange List
     Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList');
+    // -- USER PROFILE --
     // User profile
     Route::get('/profile/{id}', 'UserController@profile')->name('profile');
     // User edit-profile
     Route::get('/edit_profile/{id}', 'UserController@editProfile')->name('editProfile');
     // User update-profile
     Route::post('/updateProfile', 'UserController@updateProfile')->name('updateProfile');
+    // -- END OF USER PROFILE --
+    // Training plan --dashboard--
+    Route::get('/trainingPlan/dashboard/{id}', 'TrainingPlanController@dashboard')->name('dashboard');
 });

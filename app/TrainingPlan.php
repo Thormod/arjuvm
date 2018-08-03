@@ -13,4 +13,9 @@ class TrainingPlan extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    public function details()
+    {
+        return $this->hasMany(TrainingPlanDetail::class);
+    }
 }
