@@ -18,5 +18,10 @@ class Workout extends Model
     {
         return $this->hasMany(Exercise::class);
     }
+
+    public function details()
+    {
+        return $this->hasMany(WorkoutPlan::class);
+    }
     
 }

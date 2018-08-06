@@ -39,4 +39,6 @@ Route::middleware(['auth'])->group(function () {
     // -- END OF USER PROFILE --
     // Training plan --dashboard--
     Route::get('/trainingPlan/dashboard/{id}', 'TrainingPlanController@dashboard')->name('dashboard');
+    // Workout --index--
+    Route::get('/trainingPlan/dashboard/workout/{id}', 'WorkoutController@index')->name('workout');
 });

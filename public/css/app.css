@@ -3001,11 +3001,15 @@ padding-top: 72px;
   margin-top: 50px; }
 /* ============== Dashboard section =============== */
 .gray-background {
-  background-color: #fafafa;
+  background-color: #e4e4e4;
   padding-bottom: 60px; }
 
 .clearfix {
   margin-top: 50px; }
+
+.dashboard-btn {
+  margin-top: 40px;
+}
 /* ============== Calendar  ============== */
 div#calendar {
   margin: 0;
@@ -4087,7 +4091,60 @@ tbody.days_cal tr td {
 .image-preview-input-title {
   margin-left:2px;
 }
+/* ---------------------------------------------- */
+/* ---------------- Exercises styles ------------- */
+/* ---------------------------------------------- */
+.exercise-list {
+  padding: 20px 0; }
 
+.exercise .list-group {
+  margin-bottom: 10px;
+}
+
+.details .wrapper {
+  display: table;
+}
+
+.details .spec {
+  display: table-cell;
+  padding: 0 15px;
+  text-align: center;
+  border-left: 1px solid #dedede;
+  white-space: nowrap;
+}
+
+ .details .spec:first-child {
+  border-left: none;
+}
+
+.details label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: 600;
+}
+
+.exercise .list-group-item .fa-chevron-right {
+  position: absolute;
+  right: 8px;
+}
+
+.exercise img {
+  padding-top: 10px;
+}
+
+.exercise-modal iframe {
+  width: 100%;
+}
+.exercise-modal .modal-body {
+  padding: 0px;
+}
+.exercise-modal .title {
+  padding-top: 20px;
+}
+.exercise-modal .description {
+  padding: 20px;
+}
 /* ---------------------------------------------- */
 /* ---------------- 404 page styles ------------- */
 /* ---------------------------------------------- */

@@ -16,16 +16,17 @@
 			<div id="calendar">
 				<table>
 					<tbody class="days_cal">
-						@foreach($details->chunk(5) as $chunk)
+						@foreach($details->chunk(4) as $chunk)
 						<tr>
 							@foreach($chunk as $item) 
-							<td><a href="/workout/{{ $item->workout_id }}">{{ $item->day }}</a></td>
+							<td><a href="/trainingPlan/dashboard/workout/{{ $item->workout_id }}">{{ $item->day }}</a></td>
 							@endforeach 
 						</tr>
 						@endforeach
 					</tbody>
 				</table>
 			</div>
+			<button class="dashboard-btn center button button-bg button-buying">Descarga PDF</button>
 		</div>
 	</div>
 </div>

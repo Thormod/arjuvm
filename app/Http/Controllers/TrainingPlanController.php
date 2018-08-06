@@ -26,10 +26,6 @@ class TrainingPlanController extends Controller
     {
         $trainingPlan = TrainingPlan::find($id);
         $details = $trainingPlan->details;
-        // $workouts = array();
-        // foreach($trainingPlan->details as $detail){
-        //     $workouts =  Workout::find($detail->workout_id);
-        // }
         return view('trainingPlan.dashboard', compact('trainingPlan', 'details'));
     }
 }
