@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(NutritionalPlan::class);
     }
+
+    public function isAdmin()
+    {
+        return $this->admin ? true : false;
+    }
 }

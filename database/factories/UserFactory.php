@@ -18,6 +18,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'phone' => $faker->e164PhoneNumber,
+        'admin' => false,
         'gender' => $faker->randomElement($array = array ('male', 'female')),
         'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
         'nutritional_plan_id' => $faker->unique()->numberBetween($min = 2, $max = 50),
