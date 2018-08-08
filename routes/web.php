@@ -24,9 +24,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Training plan
 Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan');
 Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');
-// Route::get('/protected', ['middleware' => ['auth', 'admin'], function() {
-//     return "this page requires that you be logged in and an Admin";
-// }]);
+
+Route::middleware(['admin'])->group(function () {
+    Route::get('/admin', 'AdminController@index')->name('admin');
+});
 
 Route::middleware(['auth'])->group(function () {
     // Exchange List
