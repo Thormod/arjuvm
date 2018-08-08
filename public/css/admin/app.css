@@ -1463,7 +1463,9 @@ overflow: hidden; }
 
 .btn-group.select.open {
 overflow: visible; }
-
+.center {
+    text-align: center; }
+  
 .card {
 border-radius: 6px;
 box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
@@ -1493,6 +1495,8 @@ z-index: 1; }
 .card h6 {
     font-size: 12px;
     margin: 0; }
+.card .category {
+    padding: 10px 0; }
 .card .category,
 .card label {
     font-size: 14px;

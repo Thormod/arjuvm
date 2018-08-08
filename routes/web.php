@@ -26,7 +26,15 @@ Route::get('/trainingPlan', 'TrainingPlanController@index')->name('trainingPlan'
 Route::get('/trainingPlan/{id}', 'TrainingPlanController@detail')->name('trainingPlan.detail');
 
 Route::middleware(['admin'])->group(function () {
-    Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::get('/admin/dashboard', 'AdminController@index')->name('dashboard');
+    // -- EXERCISES CRUD --
+    Route::get('/admin/exercises', 'AdminController@exercises')->name('exercises');
+    Route::get('/admin/exercises/show/{id}', 'ExerciseController@show')->name('exercise.create');
+    Route::get('/admin/exercises/edit/{id}', 'ExerciseController@edit')->name('exercise.create');
+    Route::post('/admin/exercises/update/{id}', 'ExerciseController@update')->name('exercise.update');
+    Route::get('/admin/exercises/create', 'ExerciseController@create')->name('exercise.create');
+    Route::post('/admin/exercises/store', 'ExerciseController@store')->name('exercise.store');
+    Route::delete('/admin/exercises/delete/{id}', 'ExerciseController@destroy')->name('exercise.destroy');
 });
 
 Route::middleware(['auth'])->group(function () {

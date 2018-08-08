@@ -41,7 +41,7 @@
 								</div>
 								<div class="description">
 									<p>
-										{{ $exercise->description }}
+										<span style="white-space: pre-line"> {{ $exercise->description }} </span>
 									</p>
 								</div>
 								<div class="details center">

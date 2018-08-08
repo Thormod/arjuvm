@@ -28,7 +28,7 @@
                                     @else
                                         <li><a href="{{ url('/exchangeList') }}">Tabla de nutrientes</a></li>
                                         @if(Auth::user()->isAdmin())
-                                            <li><a href="/admin">Admin</a></li>
+                                            <li><a href="/admin/dashboard">Admin</a></li>
                                         @endif
                                         <li><a href="/profile/{{ Auth::id() }}">Mi Perfil</a></li>
                                         <li>

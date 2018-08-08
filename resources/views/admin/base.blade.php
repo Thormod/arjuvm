@@ -41,6 +41,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/slick.min.js"></script>
 	<script src="/js/plugins.js"></script>
-	<script src="/js/app.js"></script>
+	<script src="/js/admin/app.js"></script>
+	<script src="/js/admin/dashboard.js"></script>
 	<script src="/js/scroll.js"></script>
 </html>
