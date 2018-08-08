@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="/admin/workouts">
+                <a href="/admin/workout">
                     <i class="fa fa-map"></i>
                     <p>Workouts</p>
                 </a>

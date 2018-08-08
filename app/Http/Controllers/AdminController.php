@@ -7,6 +7,7 @@ use App\User;
 use App\Orders;
 use App\Exercise;
 use App\ExchangeList;
+use App\Workout;
 
 class AdminController extends Controller
 {
@@ -23,9 +24,15 @@ class AdminController extends Controller
         return view('admin.exercises.index', compact('exercises'));
     }
 
-    public function ExchangeList()
+    public function exchangeList()
     {
         $exchangeList = ExchangeList::all();
         return view('admin.exchangeList.index', compact('exchangeList'));
+    }
+
+    public function workouts()
+    {
+        $workouts = Workout::all();
+        return view('admin.workouts.index', compact('workouts'));
     }
 }
