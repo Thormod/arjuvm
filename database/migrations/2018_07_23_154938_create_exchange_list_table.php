@@ -22,6 +22,7 @@ class CreateExchangeListTable extends Migration
             $table->float('calorie_amount');
             $table->float('measure'); 
             $table->string('measure_type'); 
+            $table->timestamps();
         });
     }
 

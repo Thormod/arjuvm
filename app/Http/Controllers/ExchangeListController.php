@@ -26,7 +26,7 @@ class ExchangeListController extends Controller
      */
     public function create()
     {
-        
+        return view('admin.exchangeList.create');
     }
 
     /**
@@ -37,7 +37,28 @@ class ExchangeListController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'food_name' => 'required',
+            'carbohydrate_amount' => 'required',
+            'fat_amount' => 'required',
+            'protein_amount' => 'required',
+            'calorie_amount' => 'required',
+            'measure' => 'required',
+            'measure_type' => 'required'
+        ]);
+
+        $food = new ExchangeList;
+        $food->food_name = $request->get('food_name');
+        $food->carbohydrate_amount = $request->get('carbohydrate_amount');
+        $food->fat_amount = $request->get('fat_amount');
+        $food->protein_amount = $request->get('protein_amount');
+        $food->calorie_amount = $request->get('calorie_amount');
+        $food->measure = $request->get('measure');
+        $food->measure_type = $request->get('measure_type');
+        $food->save();
+        
+        return redirect('/admin/exchangeList/create')
+                ->with('success', 'Alimento creado correctamente');
     }
 
     /**
@@ -59,7 +80,9 @@ class ExchangeListController extends Controller
      */
     public function edit($id)
     {
-        //
+        $food = ExchangeList::find($id);
+
+        return view('admin.exchangeList.edit', compact('food'));
     }
 
     /**
@@ -71,7 +94,28 @@ class ExchangeListController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'food_name' => 'required',
+            'carbohydrate_amount' => 'required',
+            'fat_amount' => 'required',
+            'protein_amount' => 'required',
+            'calorie_amount' => 'required',
+            'measure' => 'required',
+            'measure_type' => 'required'
+        ]);
+
+        $food = ExchangeList::find($id);
+        $food->food_name = $request->get('food_name');
+        $food->carbohydrate_amount = $request->get('carbohydrate_amount');
+        $food->fat_amount = $request->get('fat_amount');
+        $food->protein_amount = $request->get('protein_amount');
+        $food->calorie_amount = $request->get('calorie_amount');
+        $food->measure = $request->get('measure');
+        $food->measure_type = $request->get('measure_type');
+        $food->save();
+        
+        return back()
+                ->with('success', 'Alimento actualizado correctamente');
     }
 
     /**
@@ -82,6 +126,10 @@ class ExchangeListController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $exercise = ExchangeList::find($id);
+        $exercise->delete();
+
+        return back()
+                ->with('success','Alimento eliminado correctamente');
     }
 }

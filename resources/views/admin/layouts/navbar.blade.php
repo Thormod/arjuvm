@@ -37,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="/admin/exchageList">
+                <a href="/admin/exchangeList">
                     <i class="fa fa-beer" aria-hidden="true"></i>
                     <p>Alimentos</p>
                 </a>
