@@ -11,7 +11,7 @@
 				<span class="icon-bar bar2"></span>
 				<span class="icon-bar bar3"></span>
 				</button>
-				<a class="navbar-brand" href="#">Agregar Workout</a>
+				<a class="navbar-brand" href="#">Users</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -48,27 +48,33 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="card">
+						<div class="header">
+							<h4 class="title">Tabla de usuarios</h4>
+							<p class="category"><a href="/admin/users/create" type="submit" class="btn btn-fill btn-wd">Agregar</a></p>
+						</div>
 						<div class="content table-responsive table-full-width">
-                            <form action="/admin/workout/update" method="POST" enctype="multipart/form-data">
-								@csrf
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<label for="Name">Nombre:</label>
-										<input type="text" class="form-control border-input" name="name" id="name" required="required">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<label for="Email">Descripción:</label>
-										<textarea rows="5" class="form-control border-input" name="description" id="description" required="required"></textarea>
-									</div>
-								</div>
-								<div class="center">
-									<button type="submit" class="btn btn-info btn-fill btn-wd">Crear</button>
-								</div>
-							</form>
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Nombre</th>
+										<th></th>
+										<th></th>
+									</tr>
+								</thead>
+								@foreach ($users as $user)
+								<tr>
+									<td>{{ $user->id }}</td>
+									<td>{{ $user->email }}</td>
+									<td>
+                                        <a href="/admin/users/show/{{ $user->id }}" class="btn btn-info btn-fill btn-wd">Ver</button>
+                                    </td>
+                                    <td>
+                                        <a href="/admin/users/plan/edit/{{ $user->id }}" class="btn btn-fill btn-wd">Editar Plan</button>
+									</td>
+								</tr>
+								@endforeach
+							</table>
 						</div>
 					</div>
 				</div>

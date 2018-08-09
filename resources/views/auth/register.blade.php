@@ -72,6 +72,42 @@
                             <input id="password-confirm" type="password" class="input-text" name="password_confirmation" required>
                         </div>
 
+                        <div class="form-group">
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Número de Celular') }}</label>
+                            <input id="phone" type="text" class="input-text {{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" required>
+
+                            @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('phone') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
+                            <select class="input {{ $errors->has('gender') ? ' is-invalid' : '' }}" name="gender" id="gender">
+                                <option value="male">Hombre</option>
+                                <option value="female">Mujer</option>
+                            </select>
+                            @if ($errors->has('gender'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('gender') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date" class="col-md-4 col-form-label text-md-right">{{ __('Fecha de Nacimiento') }}</label>
+                            <input class="input {{ $errors->has('birthdate') ? ' is-invalid' : '' }}" type="date"  placeholder="YYYY-MM-DD" name="birthdate" id="birthdate" required="required">
+                            @if ($errors->has('birthdate'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('birthdate') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+
+                        <br>
+                        
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="button button-bg">

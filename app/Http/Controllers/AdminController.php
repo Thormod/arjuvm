@@ -18,6 +18,12 @@ class AdminController extends Controller
         return view('admin.index', compact('usersCount', 'ordersCount'));
     }
 
+    public function users()
+    {
+        $users = User::all();
+        return view('admin.users.index', compact('users'));
+    }
+
     public function exercises()
     {
         $exercises = Exercise::all();

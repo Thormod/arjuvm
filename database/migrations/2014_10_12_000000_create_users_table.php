@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar_url')->default('/img/users/default-avatar.jpg');
             $table->string('gender');
             $table->date('birthdate');
-            $table->boolean('admin');
+            $table->boolean('admin')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

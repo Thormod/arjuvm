@@ -11,7 +11,7 @@
 				<span class="icon-bar bar2"></span>
 				<span class="icon-bar bar3"></span>
 				</button>
-				<a class="navbar-brand" href="#">Agregar Ejercicio</a>
+				<a class="navbar-brand" href="#">Actualizar Plan Nutricional de {{ $user->email }}</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -49,59 +49,52 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="content table-responsive table-full-width">
-                            <form action="/admin/exercises/store" method="POST" enctype="multipart/form-data">
+                                <form action="/admin/users/plan/update/{{ $nutritionalPlan->id }}" method="POST" enctype="multipart/form-data">
 								@csrf
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Name">Nombre:</label>
-										<input type="text" class="form-control border-input" name="name" id="name" required="required">
+										<label for="Name">Calorias:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->target_calories }}" name="target_calories" id="target_calories" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Email">Descripción:</label>
-										<textarea rows="5" class="form-control border-input" name="description" id="description" required="required"></textarea>
+										<label for="Name">Peso Actual:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->actual_weight }}" name="actual_weight" id="actual_weight" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Name">Video URL:</label>
-										<input type="text" class="form-control border-input" name="video_url" id="video_url" required="required">
+										<label for="Name">Peso Objetivo:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->target_weight }}" name="target_weight" id="target_weight" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Number">Imagen:</label>
-										<input type="file" name="image_url" id="image_url" required="required">    
+										<label for="Name">Carbohidratos:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->carbohydrate }}" name="carbohydrate" id="carbohydrate" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Number">Sets: </label>
-										<input type="text" class="form-control border-input" name="sets" id="sets" required="required">
+										<label for="Name">Proteina:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->protein }}" name="protein" id="protein" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<label for="Number">Reps: </label>
-										<input type="text" class="form-control border-input" name="reps" id="reps" required="required">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<label for="Number">Rest: </label>
-										<input type="text" class="form-control border-input" name="rest" id="rest" required="required">
+										<label for="Name">Grasa:</label>
+                                    <input type="text" class="form-control border-input" value="{{ $nutritionalPlan->fat }}" name="fat" id="fat" required="required">
 									</div>
 								</div>
 								<div class="center">
-									<button type="submit" class="btn btn-info btn-fill btn-wd">Crear</button>
+									<button type="submit" class="btn btn-info btn-fill btn-wd">Actualizar</button>
 								</div>
 							</form>
 						</div>

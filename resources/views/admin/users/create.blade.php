@@ -11,7 +11,7 @@
 				<span class="icon-bar bar2"></span>
 				<span class="icon-bar bar3"></span>
 				</button>
-				<a class="navbar-brand" href="#">Agregar Alimento</a>
+				<a class="navbar-brand" href="#">Crear usuario</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -49,57 +49,66 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="content table-responsive table-full-width">
-                            <form action="/admin/exchangeList/store" method="POST" enctype="multipart/form-data">
+                                <form action="/admin/users/store" method="POST" enctype="multipart/form-data">
 								@csrf
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
 										<label for="Name">Nombre:</label>
-										<input type="text" class="form-control border-input" name="food_name" id="food_name" required="required">
+                                    <input type="text" class="form-control border-input" name="name" id="name" required="required">
 									</div>
-								</div>
+                                </div>
+                                <div class="row">
+									<div class="col-md-4"></div>
+									<div class="form-group col-md-4">
+										<label for="Name">Número de Celular:</label>
+                                    <input type="text" class="form-control border-input" name="phone" id="phone" required="required">
+									</div>
+                                </div>
+                                <div class="row">
+									<div class="col-md-4"></div>
+									<div class="form-group col-md-4">
+										<label for="Name">E-mail:</label>
+                                    <input type="text" class="form-control border-input" name="email" id="email" required="required">
+									</div>
+                                </div>
+                                <div class="row">
+									<div class="col-md-4"></div>
+									<div class="form-group col-md-4">
+										<label for="Name">Contraseña:</label>
+                                    <input type="text" class="form-control border-input" name="password" id="password" required="required">
+									</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="form-group col-md-4">
+                                        <label for="Name">Admin:</label>
+                                        <select class="border-input form-control" name="admin" id="admin">
+                                            <option value="0">Usuario</option>
+                                            <option value="1">Admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+									<div class="col-md-4"></div>
+                                    <div class="form-group col-md-4">
+                                        <label for="Name">Género:</label>
+                                        <select class="border-input form-control" name="gender" id="gender">
+                                            <option value="male">Hombre</option>
+                                            <option value="female">Mujer</option>
+                                        </select>
+                                    </div>
+                                </div>
+
 								<div class="row">
-                                    <div class="col-md-4"></div>
+									<div class="col-md-4"></div>
                                     <div class="form-group col-md-4">
-                                        <label for="Name">Carbohidratos:</label>
-                                        <input type="text" class="form-control border-input" name="carbohydrate_amount" id="carbohydrate_amount" required="required">
+                                        <label for="Name">Fecha de Nacimiento:</label>
+										<input class="border-input form-control" type="date"  placeholder="YYYY-MM-DD" name="birthdate" id="birthdate" required="required">                                        
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4"></div>
-                                    <div class="form-group col-md-4">
-                                        <label for="Name">Grasa:</label>
-                                        <input type="text" class="form-control border-input" name="fat_amount" id="fat_amount" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4"></div>
-                                    <div class="form-group col-md-4">
-                                        <label for="Name">Proteina:</label>
-                                        <input type="text" class="form-control border-input" name="protein_amount" id="protein_amount" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4"></div>
-                                    <div class="form-group col-md-4">
-                                        <label for="Name">Calorias:</label>
-                                        <input type="text" class="form-control border-input" name="calorie_amount" id="calorie_amount" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4"></div>
-                                    <div class="form-group col-md-4">
-                                        <label for="Name">Medida:</label>
-                                        <input type="text" class="form-control border-input" name="measure" id="measure" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4"></div>
-                                    <div class="form-group col-md-4">
-                                        <label for="Name">Tipo de Medida:</label>
-                                        <input type="text" class="form-control border-input" name="measure_type" id="measure_type" required="required">
-                                    </div>
-                                </div>
+								
 								<div class="center">
 									<button type="submit" class="btn btn-info btn-fill btn-wd">Crear</button>
 								</div>

@@ -16,7 +16,7 @@
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="/home">
+						<a href="/">
 							<i class="ti-settings"></i>
 							<p>Inicio</p>
 						</a>

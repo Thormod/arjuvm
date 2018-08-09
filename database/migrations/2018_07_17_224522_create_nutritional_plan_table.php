@@ -15,12 +15,12 @@ class CreateNutritionalPlanTable extends Migration
     {
         Schema::create('nutritional_plan', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('target_calories');
-            $table->float('actual_weight');
-            $table->float('target_weight');
-            $table->float('carbohydrate');
-            $table->float('protein');
-            $table->float('fat'); 
+            $table->integer('target_calories')->default(0);
+            $table->float('actual_weight')->default(0);
+            $table->float('target_weight')->default(0);
+            $table->float('carbohydrate')->default(0);
+            $table->float('protein')->default(0);
+            $table->float('fat')->default(0); 
             $table->timestamps();
         });
     }
