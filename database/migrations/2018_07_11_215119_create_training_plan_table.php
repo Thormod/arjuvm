@@ -18,7 +18,7 @@ class CreateTrainingPlanTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->float('price');
-            $table->float('discount');
+            $table->float('discount')->default(0);
             $table->string('image_url');
             $table->string('video_url')->nullable();
             $table->string('description');

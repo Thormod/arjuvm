@@ -8,6 +8,7 @@ use App\Orders;
 use App\Exercise;
 use App\ExchangeList;
 use App\Workout;
+use App\TrainingPlan;
 
 class AdminController extends Controller
 {
@@ -40,5 +41,11 @@ class AdminController extends Controller
     {
         $workouts = Workout::all();
         return view('admin.workouts.index', compact('workouts'));
+    }
+
+    public function trainingPlan()
+    {
+        $trainingPlans = TrainingPlan::all();
+        return view('admin.trainingPlan.index', compact('trainingPlans'));
     }
 }

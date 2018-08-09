@@ -45,6 +45,17 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/exercises/create', 'ExerciseController@create')->name('exercise.create');
     Route::post('/admin/exercises/store', 'ExerciseController@store')->name('exercise.store');
     Route::delete('/admin/exercises/delete/{id}', 'ExerciseController@destroy')->name('exercise.destroy');
+    // -- TRAINING PLAN CRUD --
+    Route::get('/admin/trainingPlan', 'AdminController@trainingPlan')->name('admin.trainingPlan');
+    Route::get('/admin/trainingPlan/show/{id}', 'TrainingPlanController@show')->name('trainingPlan.show');
+    Route::get('/admin/trainingPlan/edit/{id}', 'TrainingPlanController@edit')->name('trainingPlan.edit');
+    Route::post('/admin/trainingPlan/update/{id}', 'TrainingPlanController@update')->name('trainingPlan.update');
+    Route::get('/admin/trainingPlan/create', 'TrainingPlanController@create')->name('trainingPlan.create');
+    Route::post('/admin/trainingPlan/store', 'TrainingPlanController@store')->name('trainingPlan.store');
+    Route::delete('/admin/trainingPlan/delete/{id}', 'TrainingPlanController@destroy')->name('trainingPlan.destroy');
+    Route::get('/admin/trainingPlan/workout/edit/{id}', 'TrainingPlanController@editWorkout')->name('trainingPlan.editWorkout');
+    Route::post('/admin/trainingPlan/workout/update/{id}', 'TrainingPlanController@updateWorkout')->name('trainingPlan.updateWorkout');
+    Route::delete('/admin/trainingPlan/workout/destroy/{id}', 'TrainingPlanController@destroyWorkout')->name('trainingPlan.destroyWorkout');
     // -- EXCHANGE LIST CRUD --
     Route::get('/admin/exchangeList', 'AdminController@exchangeList')->name('admin.exchangeList');
     Route::get('/admin/exchangeList/show/{id}', 'ExchangeListController@show')->name('exchangeList.show');
