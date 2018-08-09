@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Foundation\Validation\ValidatesRequests;
+
 use Illuminate\Http\Request;
 
 use App\Exercise;
@@ -39,7 +41,7 @@ class ExerciseController extends Controller
         $request->validate([
             'name' => 'required',
             'video_url' => 'required',
-            'image_url' => 'required image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image_url' => 'required',
             'description' => 'required',
             'sets' => 'required',
             'reps' => 'required',

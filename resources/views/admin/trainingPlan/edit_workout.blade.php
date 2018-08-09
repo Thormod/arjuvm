@@ -81,6 +81,13 @@
 									<input type="text" class="form-control border-input" value="{{ $detail->workout_id }}" name="name" id="name" readonly>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-md-4"></div>
+								<div class="form-group col-md-4">
+									<label for="Name">Dia:</label>
+									<input type="text" class="form-control border-input" value="{{ $detail->day }}" name="day" id="day" readonly>
+								</div>
+							</div>
 							<div class="center">
 								<a href="/admin/workout/show/{{ $detail->workout_id }}" class="btn btn-fill btn-wd">Ver Workout</a>
 								<br><br>

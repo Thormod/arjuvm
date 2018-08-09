@@ -23,17 +23,17 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('secret'),
         ]);
 
-        DB::table('users')->insert([
-            'name' =>  $faker->name,
-            'phone' => $faker->e164PhoneNumber,            
-            'email' => 'thor2@gmail.com',
-            'admin' => false,
-            'gender' => $faker->randomElement($array = array ('male', 'female')),
-            'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
-            'nutritional_plan_id' => 1,
-            'password' => bcrypt('secret'),
-        ]);
+        // DB::table('users')->insert([
+        //     'name' =>  $faker->name,
+        //     'phone' => $faker->e164PhoneNumber,            
+        //     'email' => 'thor2@gmail.com',
+        //     'admin' => false,
+        //     'gender' => $faker->randomElement($array = array ('male', 'female')),
+        //     'birthdate' => $faker->dateTimeThisCentury->format('Y-m-d'),
+        //     'nutritional_plan_id' => 1,
+        //     'password' => bcrypt('secret'),
+        // ]);
 
-        factory(App\User::class, 48)->create();
+        // factory(App\User::class, 48)->create();
     }
 }

@@ -49,7 +49,7 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="content table-responsive table-full-width">
-                            <form action="/admin/workout/update" method="POST" enctype="multipart/form-data">
+                            <form action="/admin/workout/store" method="POST" enctype="multipart/form-data">
 								@csrf
 								<div class="row">
 									<div class="col-md-4"></div>

@@ -41,9 +41,11 @@
                         </span>
                     </div>
                     <div class="classes_footer-item">
+                        @if($trainingPlan->discount != 100)  
                         <span class="clr-dark">DESCUENTO:
                             <span class="clr-lighther">{{ $trainingPlan->discount }}%</span>
                         </span>
+                        @endif
                     </div>
                 </div>
                 <a href="/trainingPlan/{{ $trainingPlan->id }}" class="link-readmore">Ver más</a>
