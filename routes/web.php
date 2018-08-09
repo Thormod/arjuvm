@@ -56,7 +56,7 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/trainingPlan/workout/edit/{id}', 'TrainingPlanController@editWorkout')->name('trainingPlan.editWorkout');
     Route::post('/admin/trainingPlan/workout/update/{id}', 'TrainingPlanController@updateWorkout')->name('trainingPlan.updateWorkout');
     Route::delete('/admin/trainingPlan/workout/destroy/{id}', 'TrainingPlanController@destroyWorkout')->name('trainingPlan.destroyWorkout');
-    // -- EXCHANGE LIST CRUD --
+    // -- EXCHANGE CRUD --
     Route::get('/admin/exchangeList', 'AdminController@exchangeList')->name('admin.exchangeList');
     Route::get('/admin/exchangeList/show/{id}', 'ExchangeListController@show')->name('exchangeList.show');
     Route::get('/admin/exchangeList/edit/{id}', 'ExchangeListController@edit')->name('exchangeList.edit');
@@ -64,7 +64,7 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/exchangeList/create', 'ExchangeListController@create')->name('exchangeList.create');
     Route::post('/admin/exchangeList/store', 'ExchangeListController@store')->name('exchangeList.store');
     Route::delete('/admin/exchangeList/delete/{id}', 'ExchangeListController@destroy')->name('exchangeList.destroy');
-    // -- WORKOUT LIST CRUD --
+    // -- WORKOUT CRUD --
     Route::get('/admin/workout', 'AdminController@workouts')->name('admin.workout');
     Route::get('/admin/workout/show/{id}', 'WorkoutController@show')->name('workout.show');
     Route::get('/admin/workout/edit/{id}', 'WorkoutController@edit')->name('workout.edit');
@@ -75,19 +75,20 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/workout/create', 'WorkoutController@create')->name('workout.create');
     Route::post('/admin/workout/store', 'WorkoutController@store')->name('workout.store');
     Route::delete('/admin/workout/delete/{id}', 'WorkoutController@destroy')->name('workout.destroy');
+    // -- ORDERS CRUD --
+    Route::get('/admin/orders', 'AdminController@orders')->name('admin.orders');
+    Route::get('/admin/orders/show/{id}', 'OrdersController@show')->name('orders.show');
 });
 
 Route::middleware(['auth'])->group(function () {
     // Exchange List
     Route::get('/exchangeList', 'ExchangeListController@index')->name('exchangeList');
-    // -- USER PROFILE --
     // User profile
     Route::get('/profile/{id}', 'UserController@profile')->name('profile');
     // User edit-profile
     Route::get('/edit_profile/{id}', 'UserController@editProfile')->name('editProfile');
     // User update-profile
     Route::post('/updateProfile', 'UserController@updateProfile')->name('updateProfile');
-    // -- END OF USER PROFILE --
     // Training plan --dashboard--
     Route::get('/trainingPlan/dashboard/{id}', 'TrainingPlanController@dashboard')->name('dashboard');
     // Workout --index--

@@ -42,6 +42,12 @@
                     <p>Alimentos</p>
                 </a>
             </li>
+            <li>
+                <a href="/admin/orders">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <p>Planes Activos</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>

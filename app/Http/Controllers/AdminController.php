@@ -48,4 +48,10 @@ class AdminController extends Controller
         $trainingPlans = TrainingPlan::all();
         return view('admin.trainingPlan.index', compact('trainingPlans'));
     }
+
+    public function orders()
+    {
+        $orders = Orders::all();
+        return view('admin.orders.index', compact('orders'));
+    }
 }
