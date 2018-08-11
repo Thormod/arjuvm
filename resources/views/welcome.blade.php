@@ -175,14 +175,14 @@
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
-                <div class="discount-percent clr-colorify">35%</div>
+                <div class="discount-percent clr-colorify">20%</div>
                 <div class="discount-title">DE DESCUENTO!</div>
                 <a href="#" class="button button-border clr-white button-decor-triangle btn-lg">Planes</a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
                     <h3 class="clr-white">BÁSICO</h3>
-                    <div class="prices-box-price clr-white">$35</div>
+                    <div class="prices-box-price clr-white">$100</div>
                     <span>Mensual</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -194,15 +194,12 @@
                         - Programa de entrenamiento.
                     </p>
                     <p class="clr-white lh-200"> 
-                        - Macros.
-                    </p>
-                    <p class="clr-white lh-200"> 
                         - Acompañamiento 1 a 1 online según disponibilidad.
                     </p>
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white">$100</div>
+                    <div class="prices-box-price clr-white">$175</div>
                     <span>3 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -220,38 +217,10 @@
                         - Macros.
                     </p>
                     <p class="clr-white lh-200"> 
-                        - Acceso a material online.
-                    </p>
-                    <p class="clr-white lh-200"> 
                         - Acompañamiento 1 a 1 online 24/7.
                     </p>
                 </div>
-                <div class="prices-box">
-                    <h3 class="clr-white">GUERRERO</h3>
-                    <div class="prices-box-price clr-white">$165</div>
-                    <span>6 MESES</span>
-                    <p class="clr-white lh-200">
-                            - Plan de alimentacion.
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Contar macros. 
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Programa de entrenamiento.
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Acceso a material online.
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Lista de Mercado.
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Macros.
-                        </p>
-                        <p class="clr-white lh-200"> 
-                            - Acompañamiento 1 a 1 online 24/7.
-                        </p>
-                </div>
+             
             </div><!-- /.prices -->
         </div><!-- /.wrapper -->
     </div>
@@ -267,7 +236,6 @@
                         basados en la ciencia por lo tanto los resultados son garantizados, los pilares de este
                         programa son la dieta flexible y la sobrecarga progresiva.
                     </p>
-                    <a href="#" class="link-readmore">Leer más</a>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 animated-on-scroll" data-animation="fadeInUp" data-delay="0.1s">
                     <h3>DEFICIT</h3>
@@ -278,7 +246,7 @@
                         un plan de entreno sencillo que vas a poder seguir aplicando aun después de que consigas
                         tu objetivo.
                     </p>
-                    <a href="#" class="link-readmore">Leer más</a>
+                    {{-- <a href="#" class="link-readmore">Leer más</a> --}}
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 animated-on-scroll" data-animation="fadeInUp" data-delay="0.2s">
                     <h3>COACH ONLINE</h3>
@@ -286,7 +254,6 @@
                         Mis planes Premium me tendrás 24/7 como tu coach online para
                         llevar tu progreso, ajustarte tu dieta semanal y revisar tus progresiones en los entrenos.
                     </p>
-                    <a href="#" class="link-readmore">Leer más</a>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 animated-on-scroll" data-animation="fadeInUp" data-delay="0.3s">
                     <h3>ALIMENTACIÓN</h3>
@@ -296,7 +263,6 @@
                         aprender el balance y poder seguir disfrutando tu vida pero mejorando tu físico en el
                         proceso.
                     </p>
-                    <a href="#" class="link-readmore">Leer más</a>
                 </div>
             </div>
         </div>
@@ -311,10 +277,10 @@
             </div>
             <div class="banner-row-top">
                 <div class="banner-1-col-left animated-on-scroll"  data-animation="fadeInLeft" data-delay="0.3s">
-                    <p><span>5</span> PROGRAMAS</p>
+                    <p><span>2</span> PROGRAMAS</p>
                 </div>
                 <div class="banner-1-col-right animated-on-scroll"  data-animation="fadeInRight" data-delay="0.3s">
-                    <p><span>+50</span><br>CASOS DE<br>EXITO</p>
+                    <p><span>+200</span><br>CASOS DE<br>EXITO</p>
                 </div>
             </div>
             <div class="banner-title animated-on-scroll"  data-animation="fadeInUp" data-delay="0.2s">

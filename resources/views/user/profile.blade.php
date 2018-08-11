@@ -75,12 +75,12 @@
                             <td>{{ $nutritionalPlan->target_calories }}</td>
                         </tr>
                         <tr>
-                            <td>CARBOHIDRATOS OBJETIVO:</td>
-                            <td>{{ $nutritionalPlan->carbohydrate }} g.</td>
-                        </tr>
-                        <tr>
                             <td>PROTEINA OBJETIVA:</td>
                             <td>{{ $nutritionalPlan->protein }} g.</td>
+                        </tr>
+                        <tr>
+                            <td>CARBOHIDRATOS OBJETIVO:</td>
+                            <td>{{ $nutritionalPlan->carbohydrate }} g.</td>
                         </tr>
                         <tr>
                             <td>GRASA OBJETIVA:</td>

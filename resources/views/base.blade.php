@@ -29,7 +29,7 @@
         <script src="/js/vendor/modernizr-custom.js"></script>
 
         <!-- /Add favicon -->
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
