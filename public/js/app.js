@@ -299,6 +299,10 @@ $(function(){
         }
     }
 
+    $(window).on('resize orientationchange', function() {
+        $('.welcome-slider').slick('resize');
+    });
+
     // Init Slick slider for welcome slider with animation.css
     function welcomeSlider(){
         var sliderOuter = $('.welcome-slider');
