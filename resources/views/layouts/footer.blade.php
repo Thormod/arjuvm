@@ -6,10 +6,10 @@
                 <div class="col-md-8 col-sm-12 col-xs-12 col-sm-12 hidden-xs">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="{{ url('/trainingPlan') }}">Planes y precios</a></li>
+                            <li><a href="{{ url('/#prices') }}">Planes y precios</a></li>
                             <li><a href="{{ url('/#about') }}">¿Quién soy?</a></li>
                             <li><a href="{{ url('/#testimonials') }}">Testimonios</a></li>
-                            <li><a href="#contact">Contáctame</a></li>
+                            {{-- <li><a href="#contact">Contáctame</a></li> --}}
                             @guest
                                 <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                             @else
