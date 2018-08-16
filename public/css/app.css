@@ -4805,6 +4805,9 @@ tbody.days_cal tr td {
   .discount-box .discount-percent {
     padding-top: 40px;
   }
+  .prices-block {
+    margin-top: 75px;
+  }
 
   /* ============= Testimonials Section ============= */
   .news-item .news-item__img img {

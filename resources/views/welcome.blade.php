@@ -45,11 +45,11 @@
                             <div class="nav-box">
                                 <div class="main-nav">
                                     <ul id="myNavbar">
-                                        <li><a href="{{ url('/trainingPlan') }}">Planes y precios</a></li>
+                                        <li><a href="#prices">Planes y precios</a></li>
                                         <li><a href="#about">¿Quién soy?</a></li>
                                         <li><a href="#testimonials">Testimonios</a></li>
-                                        <li><a href="#contact">Contáctame</a></li>
-                                        @guest
+                                        {{-- <li><a href="#contact">Contáctame</a></li> --}}
+                                        {{-- @guest
                                             <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
                                         @else
                                             <li><a href="/profile/{{ Auth::id() }}">Mi Perfil</a></li>
@@ -61,7 +61,7 @@
                                                     {{ csrf_field() }}
                                                 </form>
                                             </li>
-                                        @endguest
+                                        @endguest --}}
                                     </ul>
                                 </div><!-- /.main-nav -->
                                 {{-- <div class="small-cart-link">
@@ -172,12 +172,14 @@
 
     </div>
 
+    <section id="prices">
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
                 <div class="discount-percent clr-colorify">20%</div>
                 <div class="discount-title">DE DESCUENTO!</div>
-                <a href="#" class="button button-border clr-white button-decor-triangle btn-lg">Planes</a>
+                <h4>Para adquirir alguno de los planes debes contactarme via WhatsApp</h4>
+                <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
@@ -224,6 +226,7 @@
             </div><!-- /.prices -->
         </div><!-- /.wrapper -->
     </div>
+    </section>
 
     <div class="text-section">
         <div class="container">
