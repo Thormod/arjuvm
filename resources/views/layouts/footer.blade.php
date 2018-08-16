@@ -11,7 +11,7 @@
                             <li><a href="{{ url('/#testimonials') }}">Testimonios</a></li>
                             {{-- <li><a href="#contact">Contáctame</a></li> --}}
                             @guest
-                                <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
+                                {{-- <li><a href="{{ route('login') }}">Inicio de sesión</a></li> --}}
                             @else
                                 <li><a href="/profile/{{ Auth::id() }}">Mi Perfil</a></li>
                                 <li>
