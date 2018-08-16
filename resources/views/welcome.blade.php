@@ -184,7 +184,7 @@
             <div class="prices-block">
                 <div class="prices-box">
                     <h3 class="clr-white">BÁSICO</h3>
-                    <div class="prices-box-price clr-white">$100</div>
+                    <div class="prices-box-price clr-white">$100 USD</div>
                     <span>3 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -201,7 +201,7 @@
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white">$160</div>
+                    <div class="prices-box-price clr-white">$160 USD</div>
                     <span>6 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
