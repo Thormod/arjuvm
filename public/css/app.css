@@ -2243,7 +2243,12 @@ padding-top: 72px;
   top: -119px;
   margin-bottom: -119px;
   position: relative; }
-
+.welcome-section .welcome-image {
+  background-image: url('../img/welcome-slider/home-welcome-img_1_small.jpg');
+  width: 100%;
+  display: none;
+  padding: 140px 20px 40px;
+}
 .welcome-section span.progressBar {
   width: 100%;
   height: 4px;
@@ -4727,6 +4732,9 @@ tbody.days_cal tr td {
 /* ------------------ Styles for 480 mobile devices --------------- */
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {
+  .main-wrapper {
+    overflow-x: hidden;
+  }
   h3 {
     font-size: 20px; }
   .container {
@@ -4797,10 +4805,19 @@ tbody.days_cal tr td {
   .welcome-section .welcome-section-txt {
     padding-top: 30px;
   }
-
+  .welcome-section .welcome-slider {
+    display: none;
+  }
+  .welcome-section .welcome-image {
+    display: inherit;
+  }
+  
   /* ============= Prices Section ============= */
   .prices-section .discount-box {
     height: 300px;
+  }
+  .discount-box .discount-title {
+    font-size: 30px;
   }
   .discount-box .discount-percent {
     padding-top: 40px;
@@ -4816,6 +4833,7 @@ tbody.days_cal tr td {
   /* ============= Trainers banner ============= */
   .our-team .our-team__item .name {
     display: block;
+    font-size: 80px;
   }
   .our-team .our-team-bg {
     opacity: 0;
@@ -4823,16 +4841,36 @@ tbody.days_cal tr td {
   .main-banner-1 .banner-title p {
     display: block;
   }
+  .main-banner-1 .banner-row-top {
+    display: initial;
+  }
+  .main-banner-1 .banner-1-img img {
+    margin-top: -57px;
+    margin-left: -130px;
+    height: 270px;
+    width: auto;
+  }
+  .main-banner-1 .banner-title {
+    display: none;
+  }
+  .main-banner-1 .banner-row-bottom {
+    display: none;
+  }
+  .main-banner-1 .banner-1-col-left {
+    margin-left: -20px;
+  }
+  .main-banner-1 .banner-1-col-right {
+    margin-top: -150px;
+    padding-left: 5px;
+  }
   .banner-trainer h3 {
     font-size: 40px; }
   .banner-trainer .banner-2-cols {
     display: block; }
   .banner-trainer .banner-2-col-1 {
-    width: 100%;
-    float: none; }
+    width: 100%; }
   .banner-trainer .banner-2-col-2 {
-    width: 100%;
-    float: none; }
+    width: 100%;}
   /* ============ Pagination ================ */
   .pagination .pagination-prev {
     display: block;
@@ -4863,7 +4901,9 @@ tbody.days_cal tr td {
 /* ---------------- Styles for 320px mobile devices --------------- */
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 320px) {
- 
+  .main-wrapper {
+    overflow-x: hidden;
+  }
   .button {
     line-height: 120% !important;
     padding: 15px !important; }
@@ -4881,7 +4921,16 @@ tbody.days_cal tr td {
     display: block;
     text-align: center; }
   .prices-box {
-    height: auto; } }
+    height: auto; } 
+  .main-banner-1 .banner-1-col-left {
+    margin-left: -30px;}
+  .main-banner-1 .banner-1-col-right {
+    margin-top: -150px;
+    padding-left: 40px; }
+  .welcome-section .welcome-image {
+    background-position-x: -35px;
+    padding: 100px 20px 40px; } }
+    
 
 
     

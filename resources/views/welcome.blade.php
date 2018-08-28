@@ -99,6 +99,18 @@
 
     <!-- Start Main Content Part -->
     <div class="welcome-section">
+        <div class="welcome-image">
+            <div class="welcome-section-txt">
+                    <div class="decor-corner-lines" data-animation="fadeIn" data-delay="0.5s"></div>
+                    <h1 class="clr-white" data-animation="fadeInRight" data-delay="0s">COACH ONLINE!</h1>
+                    <p class="clr-white" data-animation="fadeInRight" data-delay="0.3s">
+                        Hola mi Nombre es Arju y me gustaría llevarte a través del verdadero y unico proceso que necesitas 
+                        para traer una  mejor versión de ti mismo. Yo enseñoo un estilo de vida que es sostenible en todos 
+                        los ámbitos, que te llevara a tu cuerpo soñado y te hara sentir bien en el proceso.
+                    </p>
+                    <a href="#" class="button button-border clr-white button-decor-triangle" data-animation="fadeInUp" data-delay=".8s">¡ÚNETE AHORA!</a>
+                </div>
+        </div>
         <div class="welcome-slider">
             <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_4.jpg">
                 <div class="container">
@@ -273,7 +285,7 @@
 
     {{-- About Section --}}
     <section id="about">
-    <div class="banner main-banner-1 hidden-sm hidden-xs">
+    <div class="banner main-banner-1">
         <div class="container">
             <div class="banner-1-img animated-on-scroll"  data-animation="fadeInUp" data-delay="0s">
                 <img src="img/banners/banner-1-img.png" alt="Banner 1">
@@ -374,7 +386,7 @@
                     </div>
                     <div class="news-item__content"></a>
                         <span class="link-readmore">DIANA</span>
-                        <p class="news-item-text">"Arju no solamente me condujo a músculos mas fuertes y grandes, si no que le perdí el miedo a comer carbohidratos, ahora disfruto mucho mas de mis comidas y veo grandes resultados!"</p>
+                        <p class="news-item-text">"Después de tantos intentos y frustraciones, por fin encontré a alguien que me supo guiar, me ayudó a disfrutar el proceso y ver resultados.  Con Arju aprendí que todo es un balance, que este estilo de vida se adapta a mis necesidades y objetivos."</p>
                     </div>
                 </div>
                 <div class="news-item col-md-6 col-sm-6 col-xs-12 nopadding">
@@ -418,7 +430,7 @@
         </div>
     </section>
     </div>
-    <div class="counters-section hidden-xs">
+    <div class="counters-section">
         <div class="counters-line"></div>
         <div class="container">
             <div class="row">

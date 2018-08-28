@@ -589,4 +589,8 @@ $(function(){
         $iframe.attr("src", $iframe.attr("src"));
     });
     });
+
+    $(window).on('resize orientationchange', function() {
+        $('.welcome-slider').slick('resize');
+      });
 });
