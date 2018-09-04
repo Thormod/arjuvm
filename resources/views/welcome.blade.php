@@ -99,20 +99,8 @@
 
     <!-- Start Main Content Part -->
     <div class="welcome-section">
-        <div class="welcome-image">
-            <div class="welcome-section-txt">
-                    <div class="decor-corner-lines" data-animation="fadeIn" data-delay="0.5s"></div>
-                    <h1 class="clr-white" data-animation="fadeInRight" data-delay="0s">COACH ONLINE!</h1>
-                    <p class="clr-white" data-animation="fadeInRight" data-delay="0.3s">
-                        Hola mi Nombre es Arju y me gustaría llevarte a través del verdadero y unico proceso que necesitas 
-                        para traer una  mejor versión de ti mismo. Yo enseñoo un estilo de vida que es sostenible en todos 
-                        los ámbitos, que te llevara a tu cuerpo soñado y te hara sentir bien en el proceso.
-                    </p>
-                    <a href="#" class="button button-border clr-white button-decor-triangle" data-animation="fadeInUp" data-delay=".8s">¡ÚNETE AHORA!</a>
-                </div>
-        </div>
         <div class="welcome-slider">
-            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_4.jpg">
+            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_4.jpg" data-img-mobile="img/welcome-slider/home-welcome-img_1_small.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
@@ -134,7 +122,7 @@
                 <span data-slick-index="2" class="progressBar"></span>
             </div>
 
-            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_1.jpg">
+            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_1.jpg" data-img-mobile="img/welcome-slider/home-welcome-img_2_small.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
@@ -156,7 +144,7 @@
                 </div>
                 <span data-slick-index="2" class="progressBar"></span>
             </div>
-            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_3.jpg">
+            <div class="welcome-slider-item data-bg" data-background="img/welcome-slider/home-welcome-img_3.jpg" data-img-mobile="img/welcome-slider/home-welcome-img_3_small.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
@@ -168,8 +156,7 @@
                                         La dieta flexible no es la típica dieta copy-paste de comer solo brócoli y pechuga,nada de esto! 
                                         Es una dieta estilo de vida, ya que no hay restricciones de alimentos y vas a poder seguir disfrutando
                                         de tus comidas favoritas con moderación. En todos mis planes la vas a  poder aplicar, es solo 
-                                        cuestión de balance calorías quemadas por calorías consumidas y llevar control de los macronutrientes. 
-                                        Una vez aprendas esto vas a ver que descubriste la clave absoluta para definir o poner mas musculo.
+                                        cuestión de balance calorías quemadas por calorías consumidas y llevar control de los macronutrientes.
                                     </p>
                                     <a href="#" class="button button-border clr-white button-decor-triangle" data-animation="fadeInUp" data-delay=".8s">¡ÚNETE AHORA!</a>
                                 </div>
@@ -385,7 +372,7 @@
                         <img src="img/testimonials/05.jpg" alt="News 2">
                     </div>
                     <div class="news-item__content"></a>
-                        <span class="link-readmore">DIANA</span>
+                        <span class="link-readmore">MARIANA</span>
                         <p class="news-item-text">"Después de tantos intentos y frustraciones, por fin encontré a alguien que me supo guiar, me ayudó a disfrutar el proceso y ver resultados.  Con Arju aprendí que todo es un balance, que este estilo de vida se adapta a mis necesidades y objetivos."</p>
                     </div>
                 </div>

@@ -52,5 +52,7 @@
         <script src="/js/plugins.js"></script>
         <script src="/js/app.js"></script>
         <script src="/js/scroll.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     </body>
 </html>

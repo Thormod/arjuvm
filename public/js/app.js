@@ -60,10 +60,16 @@ $(function(){
     function backgrounds(){
         if($('.data-bg').length){
             $( '.data-bg' ).each(function() {
-                var attr = $(this).attr('data-background');
+                // var attr = $(this).attr('data-background');
+                var desktopImage = $(this).attr("data-background");
+                var mobileImage = $(this).attr("data-img-mobile");
 
-                if (typeof attr !== typeof undefined && attr !== false) {
-                    $(this).css('background', 'url('+attr+')');
+                if (typeof desktopImage !== typeof undefined && desktopImage !== false) {
+                    if ($(window).width()  < 500) {
+                        $(this).css('background-image', 'url("' + mobileImage + '")');
+                    } else {
+                        $(this).css('background-image', 'url("' + desktopImage + '")');
+                    }
                 }
 
             });
@@ -317,7 +323,7 @@ $(function(){
                 autoplay: true,
                 autoplaySpeed: 5000,
                 speed: 1000,
-                pauseOnHover: false
+                pauseOnHover: false,
             });
             sliderOuter.on('beforeChange', function(event, slick, currentSlide, nextSlide){
                 var element = $('div.welcome-slider-item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
@@ -362,7 +368,7 @@ $(function(){
                 }
             }
         }
-
+       
         function resetProgressbar() {
             $('.inProgress').css({
                 width: 0 + '%'
@@ -592,5 +598,5 @@ $(function(){
 
     $(window).on('resize orientationchange', function() {
         $('.welcome-slider').slick('resize');
-      });
+    });
 });

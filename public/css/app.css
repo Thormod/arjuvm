@@ -253,7 +253,8 @@ body {
 .data-bg {
   background-position: center center !important;
   background-repeat: no-repeat !important;
-  background-size: cover !important; }
+  background-size: cover !important;
+  object-fit: cover; }
 
 .clear:before {
   content: '';
@@ -2266,6 +2267,10 @@ padding-top: 72px;
 .welcome-section .welcome-slider {
   width: 100%;
   height: 100%; }
+
+.first-slide {
+  background: url("img/welcome-slider/home-welcome-img_4.jpg");
+}
 
 .welcome-section .welcome-slider .slick-arrow {
   position: absolute;
@@ -4805,8 +4810,11 @@ tbody.days_cal tr td {
   .welcome-section .welcome-section-txt {
     padding-top: 30px;
   }
-  .welcome-section .welcome-slider {
-    display: none;
+  .welcome-slider .button{
+    background-color: #cb1313;
+  }
+  .welcome-slider-item {
+    padding: 500px 0;
   }
   .welcome-section .welcome-image {
     display: inherit;
