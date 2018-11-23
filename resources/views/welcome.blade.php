@@ -175,8 +175,8 @@
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
-                <div class="discount-percent clr-colorify">20%</div>
-                <div class="discount-title">DE DESCUENTO!</div>
+                <div class="discount-percent clr-colorify">-30%</div>
+                <div class="discount-title">BLACK WEEKEND!</div>
                 <h4>Para adquirir alguno de los planes debes contactarme via WhatsApp</h4>
                 <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white">$160 USD</div>
+                    <div class="prices-box-price clr-white">$170 USD</div>
                     <span>6 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
