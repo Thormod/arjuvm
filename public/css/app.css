@@ -2481,8 +2481,8 @@ padding-top: 72px;
 .prices-box .prices-box-price {
   font-size: 55px;
   font-weight: bold;
-  padding: 20px 0; }
-
+  /* padding: 20px 0; } */
+}
 .prices-box .link-readmore {
   position: absolute;
   bottom: 30px; }
