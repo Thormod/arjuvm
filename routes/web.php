@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/trainingPlans', function () {
     return view('classes');
 });
+Route::get('/routine', function () {
+    return view('routine');
+});
 
 Auth::routes();
 

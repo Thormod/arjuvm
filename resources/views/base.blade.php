@@ -30,6 +30,7 @@
 
         <!-- /Add favicon -->
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <script src="/js/jquery-3.2.0.min.js"></script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -45,7 +46,6 @@
         </a>
         @include('layouts.footer')
         <!-- Include JS -->
-        <script src="/js/jquery-3.2.0.min.js"></script>
         <script src="/js/modernizr-custom.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/slick.min.js"></script>

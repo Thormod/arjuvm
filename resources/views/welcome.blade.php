@@ -48,6 +48,7 @@
                                         <li><a href="#prices">Planes y precios</a></li>
                                         <li><a href="#about">¿Quién soy?</a></li>
                                         <li><a href="#testimonials">Testimonios</a></li>
+                                        <li><a href="/routine">Rutina gratis</a></li>
                                         {{-- <li><a href="#contact">Contáctame</a></li> --}}
                                         {{-- @guest
                                             <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
@@ -175,15 +176,14 @@
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
-                <div class="discount-percent clr-colorify">-30%</div>
-                <div class="discount-title">BLACK WEEKEND!</div>
+                <div class="discount-percent clr-colorify">-10%</div>
                 <h4>Para adquirir alguno de los planes debes contactarme via WhatsApp</h4>
                 <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
                     <h3 class="clr-white">BÁSICO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$100</div>$70 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$115</div>$100 USD</div>
                     <span>3 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -200,7 +200,7 @@
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$170</div>120 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$190</div>170 USD</div>
                     <span>6 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
