@@ -49,7 +49,7 @@
                                         <li><a href="{{ url('/') }}">Planes y precios</a></li>
                                         <li><a href="{{ url('/') }}">¿Quién soy?</a></li>
                                         <li><a href="{{ url('/') }}">Testimonios</a></li>
-                                        <li><a href="/routine">Rutina gratis</a></li>
+                                        <li><a href="/routine">Rutina Arju</a></li>
                                         {{-- <li><a href="#contact">Contáctame</a></li> --}}
                                         {{-- @guest
                                             <li><a href="{{ route('login') }}">Inicio de sesión</a></li>
