@@ -106,7 +106,7 @@
             <div class="col-lg-12">
                 <ul>
                     <li><a href="{{ url('/') }}">Inicio</a></li>
-                    <li><span>Rutina gratis</span></li>
+                    <li><span>Rutina Arju</span></li>
                 </ul>
             </div>
         </div>
@@ -123,7 +123,12 @@
                         <input id="password" type="email" class="input-text {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ old('password') }}" required autofocus>
                     </div>
 
-                    
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked value="male">Rutina Hombres</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="women">Rutina mujeres</label>
+                    </div>
                     <div class="form-group row form-buttons">
                         <div class="col-md-12">
                             <button id="pdfDownload" class="center button button-bg button-buying">Descarga PDF</button>
@@ -138,7 +143,12 @@
 $(document).ready(function(){
     $("#pdfDownload").click(function(){
         if($("#password").val() ==  "Estilodevida123") {
-            var valFileDownloadPath = '/files/ULPPL.pdf';
+            var selValue = $('input[name=optradio]:checked').val();
+            if(selValue == 'male') {
+                var valFileDownloadPath = '/files/ULPPL.pdf';
+            } else {
+                var valFileDownloadPath = '/files/WOMEN.pdf';
+            }
             window.open(valFileDownloadPath , '_blank');
         } else {
             alert("Contraseña invalida");
