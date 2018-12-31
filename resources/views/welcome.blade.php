@@ -176,14 +176,14 @@
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
-                <div class="discount-percent clr-colorify">-10%</div>
-                <h4>Para adquirir alguno de los planes debes contactarme via WhatsApp</h4>
+                <div class="discount-percent clr-colorify">-40%</div>
+                <h4>Planes sujetps a disponibilidad de cupos, Contáctame vía whatsapp</h4>
                 <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
                     <h3 class="clr-white">BÁSICO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$115</div>$100 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$140</div>$85 USD</div>
                     <span>3 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -200,7 +200,7 @@
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$190</div>170 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$215</div>130 USD</div>
                     <span>6 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -212,10 +212,10 @@
                         - Programa de entrenamiento.
                     </p>
                     <p class="clr-white lh-200"> 
-                        - Lista de Mercado.
+                        - Ejemplo diario de comidas.
                     </p>
                     <p class="clr-white lh-200"> 
-                        - Macros.
+                        - Guia de registro de macros.
                     </p>
                     <p class="clr-white lh-200"> 
                         - Acompañamiento 1 a 1 online 24/7.
