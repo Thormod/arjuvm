@@ -177,7 +177,7 @@
         <div class="container mobile-container-fluid">
             <div class="discount-box">
                 <div class="discount-percent clr-colorify">-40%</div>
-                <h4>Planes sujetps a disponibilidad de cupos, Contáctame vía whatsapp</h4>
+                <h4>Planes sujetos a disponibilidad de cupos, Contáctame vía whatsapp</h4>
                 <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
             <div class="prices-block">
@@ -189,7 +189,7 @@
                         - Plan de alimentacion.
                     </p>
                     <p class="clr-white lh-200"> 
-                        - Contar macros. 
+                        - Guia de registro de macros.
                     </p>
                     <p class="clr-white lh-200"> 
                         - Programa de entrenamiento.
