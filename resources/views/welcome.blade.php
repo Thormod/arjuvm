@@ -176,14 +176,14 @@
     <div class="prices-section">
         <div class="container mobile-container-fluid">
             <div class="discount-box">
-                <div class="discount-percent clr-colorify">-40%</div>
+                <div class="discount-percent clr-colorify">-10%</div>
                 <h4>Planes sujetos a disponibilidad de cupos, Contáctame vía whatsapp</h4>
                 <a href="#"><i class="fas fa-phone"></i> (+57) 316 690 3748 </a>
             </div>
             <div class="prices-block">
                 <div class="prices-box">
                     <h3 class="clr-white">BÁSICO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$140</div>$85 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$130</div>$117 USD</div>
                     <span>3 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
@@ -200,7 +200,7 @@
                 </div>
                 <div class="prices-box">
                     <h3 class="clr-white">AVANZADO</h3>
-                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$215</div>130 USD</div>
+                    <div class="prices-box-price clr-white"><div style="text-decoration:line-through;">$195</div>$175.50 USD</div>
                     <span>6 MESES</span>
                     <p class="clr-white lh-200">
                         - Plan de alimentacion.
